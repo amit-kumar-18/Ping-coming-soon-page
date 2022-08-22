@@ -8,7 +8,6 @@ const regularExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 email.onfocus = () => {
   msg.style.display = 'none'
-  email.style.borderColor = 'hsl(223, 100%, 88%)'
 }
 
 function validation() {
