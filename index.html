@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="top-container">
+      <header class="top-container">
         <div class="logo">
           <img src="/images/logo.svg" alt="logo" />
         </div>
@@ -30,25 +30,27 @@
             id="email"
             required
           />
-          <button id="btn">Notify Me</button>
+          <button type="button" id="btn">Notify Me</button>
           <small id="error-msg">Please provide a valid email address</small>
         </div>
-      </div>
-      <div class="dashboard">
-        <img src="/images/illustration-dashboard.png" alt="dashboard" />
-      </div>
-      <div class="socials">
-        <ul>
-          <li><i class="fa-brands fa-facebook-f"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-        </ul>
-      </div>
-      <div class="copyright">
+      </header>
+      <main>
+        <div class="dashboard">
+          <img src="/images/illustration-dashboard.png" alt="dashboard" />
+        </div>
+        <div class="socials">
+          <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </main>
+
+      <footer class="copyright">
         <small>&copy; Copyright Ping. All rights reserved.</small>
-      </div>
+      </footer>
     </div>
-    <p class="attribution">Coded by <a href="#">Amit Kumar</a>.</p>
   </body>
   <script src="/script.js"></script>
 </html>

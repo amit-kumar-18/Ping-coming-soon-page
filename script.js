@@ -6,21 +6,21 @@ const thankYou = document.querySelector('.thank-you')
 
 const regularExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-email.onfocus = () => {
-  msg.style.display = 'none'
-}
-
+//ultlity-functions
 function validation() {
   if (!email.value.match(regularExp)) {
-    msg.style.display = 'inline-block'
-    email.style.borderColor = 'hsl(354, 100%, 66%)'
+    msg.classList.add('active')
+    email.classList.add('active')
+
     return false
   } else {
-    email.style.borderColor = 'hsl(223, 100%, 88%)'
+    msg.classList.remove('active')
+    email.classList.remove('active')
     return true
   }
 }
 
+//event-listener
 btn.addEventListener('click', () => {
   if (validation()) {
     container.innerHTML = `
